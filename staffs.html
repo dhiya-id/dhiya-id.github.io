@@ -1,0 +1,25 @@
+---
+title: Staff
+heading: Staff
+subtitle: Staff PT Dhiya Aneka Teknik.
+---
+
+<section class="diagonal patterned">
+	<div class="container">
+	  <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staffs/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+
+		<ul class="image-grid">
+			{% for staff in site.staffs %}
+				<li>
+					<a href="{{ site.baseurl }}{{ staff.url }}">
+						<img src="{% include relative-src.html src=staff.image_path %}" alt="{{ staff.name }}">
+						<div class="details">
+							<div class="name">{{ staff.name }}</div>
+							<div class="position">{{ staff.position }}</div>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

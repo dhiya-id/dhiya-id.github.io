@@ -1,0 +1,24 @@
+- title: Halaman
+  links:
+    - name: Beranda
+      link: /
+    - name: Blog
+      link: /blog/
+    - name: Album
+      link: /albums/
+    - name: Staff
+      link: /staffs/
+    - name: Tentang
+      link: /about/
+    - name: Kontak
+      link: /contact/
+- title: Sosial
+  links:
+    - name: Facebook
+      link: https://www.facebook.com/PtDhiyaAnekaTeknik
+      social_icon: Facebook
+      new_window: true
+    - name: Twitter
+      link: https://www.twitter.com/#
+      social_icon: Twitter
+      new_window: true

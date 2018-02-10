@@ -1,0 +1,27 @@
+---
+title: Album
+heading: Album
+subtitle: Album PT Dhiya Aneka Teknik.
+---
+
+<section class="diagonal patterned">
+	<div class="container">
+	  <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_albums/" class="btn"><strong>&#9998;</strong> Manage Albums</a></p>
+
+		<ul class="image-grid">
+			{% for album in site.albums %}
+				<li>
+					<a href="{{ site.baseurl }}{{ album.url }}">
+						<img src="{% include relative-src.html src=album.image_path %}" alt="{{ album.name }}">
+						<div class="details">
+							<div class="name">{{ album.name }}</div>
+							<div class="position">{{ album.subtitle }}</div>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+			<li class="filler"></li>
+			<li class="filler"></li>
+		</ul>
+	</div>
+</section>

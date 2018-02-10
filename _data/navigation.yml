@@ -1,0 +1,11 @@
+links:
+- name: Blog
+  link: /blog/
+- name: Album
+  link: /albums/
+- name: Staff
+  link: /staffs/
+- name: Tentang
+  link: /about/
+- name: Kontak
+  link: /contact/

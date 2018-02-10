@@ -1,0 +1,45 @@
+---
+title: Tentang
+heading: Tentang Kami
+subtitle: PT Dhiya Aneka Teknik.
+---
+
+<section class="diagonal alternate">
+  <div class="container">
+    <p><strong>PT Dhiya Aneka Teknik</strong> adalah lembaga pelatihan dan sertifikasi didirikan di Indonesia pada tahun 2009 yang berkedudukan di kota Serang Banten. Tujuan kami adalah untuk menyediakan Jasa pelatihan keselamatan dan Kesehatan Kerja (K3), jasa konsultasi K3 dan jasa sertifikasi peralatan pabrik (pengujian kelayakan peralatan pabrik). Kami hadir dengan tekad dan keyakinan penuh mampu melayani klien milik pemerintah maupun perusahaan swasta (asing maupun domestik).</p>
+    <p><strong>PT Dhiya Aneka Teknik</strong> adalah Perusahaan PJK3 yang ditunjuk oleh Kemenakertrans RI sebagai mitra Kemenakertrans RI dalam melaksanakan pembinaan K3 di Indonesia umumnya dan di Banten Khususnya dengan Surat Keputusan Penunjukkan yang dikeluarkan oleh Kemenakertrans RI No Kep : 110/DJPPK/III/2013.</p>
+    <p><strong>PT Dhiya Aneka Teknik</strong> berpartisipasi dalam mensosialisasikan dan menerapkan K3 (Keselamatan dan kesehatan kerja) kepada masyarakat industri yang ada di Indonesia di dalam partisipasi pencapaian budaya yang berbasis pada K3 yang telah di publikasikan kepada seluruh warga negara Indonesia, bahwasanya setiap aktivitas yang dilakukan harus berwawasan K3.</p>
+    <p><strong>PT Dhiya Aneka Teknik</strong> berkomitmen menerapkan keselamatan dan kesehatan kerja di dalam menjalankan operasional prusahaan serta didukung dengan peralatan yang kami miliki serta tenaga ahli yang kami miliki kami siap berpartisipasi dan mampu untuk bersama-sama menegakkan K3 di Indonesia.</p>
+    <p><strong>Visi Kami</strong></p>
+    <p>Menjadi perusahaan penyedia jasa K3 terbaik yang mampu menjadi kemitraan konsultasi untuk klien kami.</p>
+    <p><strong>Misi Kami</strong></p>
+    <ul>
+      <li>Menjadikan sebuah perusahaan yang terus mengutamakan penerapan K3 di dalam operasional.</li>
+      <li>Melakukan pencapaian dengan kepuasan costumer.</li>
+      <li>Melakukan perbaikan yang berkesinambungan disegala aspek.</li>
+      <li>Meningkatkan ilmu pengetahuan dan kompetensi Keselamatan Kerja.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container">
+	  <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staffs/" class="btn"><strong>&#9998;</strong>Manage Staff members</a></p>
+
+    <h3 class="editable">Staff</h3>
+      <ul class="image-grid">
+        {% for staff in site.staffs limit: 4 %}
+          <li>
+            <a href="{{ site.baseurl }}{{ staff.url }}">
+              <img src="{% include relative-src.html src=staff.image_path %}" alt="{{ staff.name }}">
+              <div class="details">
+                <div class="name">{{ staff.name }}</div>
+                <div class="position">{{ staff.position }}</div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <p class="editable"><a href="{{ site.baseurl }}/staffs/">Lihat semua staff &rarr;</a></p>
+	</div>
+</section>

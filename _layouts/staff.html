@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign staff = site.pages | where: "path", "staffs.html" | first %}
+
+<section class="hero diagonal">
+	<div class="container">
+		{% if staff.heading %}
+		<h2><a href="{{ site.baseurl }}/staffs/">{{ staff.heading }}</a> / {{ page.title | capitalize }}</h2>
+		{% endif %}
+		{% if page.subtitle %}
+			<p class="subtext">{{ page.subtitle }}</p>
+		{% endif %}
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container" style="max-width: 450px;">
+		<ul class="image-grid">
+      <li>
+        <img src="{% include relative-src.html src=page.image_path %}" alt="{{ page.name }}">
+        <div class="details">
+          <div class="name">{{ page.name }}</div>
+          <div class="position">{{ page.position }}</div>
+        </div>
+      </li>
+    </ul>
+	</div>
+</section>

@@ -1,0 +1,54 @@
+---
+---
+
+<section class="hero diagonal cover">
+	<div class="container">
+		<h2 class="editable">PT. DHIYA ANEKA TEKNIK</h2>
+		<p class="subtext editable">Your Partner in Safety.</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Kontak Kami</a></p>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+  <div class="container halves">
+    <div>
+      <ul class="image-list">
+        <li><img src="{{ site.baseurl }}/images/visi.gif" width="256" height="256" alt="Visi"></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="editable">Visi</h3>
+      <p class="editable">Menjadi perusahaan penyedia jasa K3 terbaik yang mampu menjadi kemitraan konsultasi untuk klien kami.</p>
+    </div>
+  </div>
+  <div class="container halves">
+    <div>
+      <ul class="image-list">
+        <li><img src="{{ site.baseurl }}/images/misi.gif" width="256" height="256" alt="Misi"></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="editable">Misi</h3>
+      <ul>
+        <li>Menjadikan sebuah perusahaan yang terus mengutamakan penerapan K3 di dalam operasional.</li>
+        <li>Melakukan pencapaian dengan kepuasan costumer.</li>
+        <li>Melakukan perbaikan yang berkesinambungan disegala aspek.</li>
+        <li>Meningkatkan ilmu pengetahuan dan kompetensi Keselamatan Kerja.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container">
+		<div>
+      <h3 class="editable">Album</h3>
+			<ul class="image-grid">
+        {% for album in site.albums limit: 4 %}
+          <li><a href="{{ site.baseurl }}{{ album.url }}"><img src="{% include relative-src.html src=album.image_path %}" alt="{{ album.name }}"></a></li>
+        {% endfor %}
+      </ul>
+      <p class="editable"><a href="{{ site.baseurl }}/albums/">Lihat semua album &rarr;</a></p>
+		</div>
+	</div>
+</section>

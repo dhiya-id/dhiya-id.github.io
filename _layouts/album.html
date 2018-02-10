@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign album = site.pages | where: "path", "albums.html" | first %}
+
+<section class="hero diagonal">
+	<div class="container">
+		{% if album.heading %}
+		<h2><a href="{{ site.baseurl }}/albums/">{{ album.heading }}</a> / {{ page.title | capitalize }}</h2>
+		{% endif %}
+		{% if page.subtitle %}
+			<p class="subtext">{{ page.subtitle }}</p>
+		{% endif %}
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container">
+		<p><img src="{% include relative-src.html src=page.image_path %}"></p>
+		<div>
+			{{ content }}
+		</div>
+	</div>
+</section>
